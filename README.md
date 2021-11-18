@@ -1,2 +1,1 @@
-# GTH-cc-basis
-Correlation consistent basis sets for the GTH pseudopotentials
+# Correlation consistent Gaussian basis sets for periodic calculations
