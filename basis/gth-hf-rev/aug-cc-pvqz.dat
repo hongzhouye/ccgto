@@ -1,0 +1,157 @@
+# Correlation-consistent Gaussian basis sets optimized for the
+# Goedecker-Teter-Hutter (GTH) Hartree-Fock (HF) pseudopotentials.
+#
+# Augmented by one diffuse function per angular momentum channel.
+#
+# For questions/requests, please contact
+#
+#   Hong-Zhou Ye <hzyechem@gmail.com>
+#
+# Papers on the design and benchmark of the basis sets:
+#
+#   [1] Ye, and Berkelbach, in preparation.
+#
+#   [2] Ye, Neufeld, and Berkelbach, in preparation.
+#
+# The GTH-HF pseudopotential is taken from
+#
+#   https://github.com/juerghutter/GTH/tree/master/HF
+#
+# which is also available from the PySCF software package under the
+# name 'gth-hf-rev'; see this PR for details
+#
+#   https://github.com/pyscf/pyscf/pull/1029
+#
+# For elements with more than one PP, the basis sets suitable
+# for the calculation using different PPs are listed.
+# For example, the 'Liq1' basis set should be used with the
+# 'gth-hf-rev-q1' (i.e., 'the large-core') pseudopotential,
+# while the 'Liq3' basis set should be used with the 'gth-hf-rev-q3'
+# (i.e., the 'small-core') pseudopotential.
+#
+# Basis sets for the following elements are currently available:
+# ('nelec_frz' is num of frozen electrons suggested in correlated
+# calculations)
+#
+#   ------------------------------------
+#    elem    config           nelec_frz
+#   ------------------------------------
+#    He      1s^2             0
+#    Ne      2s^2 2p^6        0
+#    Ar      3s^2 3p^6        0
+#   ------------------------------------
+#
+#
+
+#BASIS SET: (6s,4p,3d,2f) -> [5s,4p,3d,2f] He
+He  S
+   13.210846    4.927741e-02
+    4.278458    1.434482e-01
+He  S
+    1.415227    1.000000e+00
+He  S
+    0.488893    1.000000e+00
+He  S
+    0.172934    1.000000e+00
+He  S
+    0.045465    1.000000e+00
+He  P
+    6.192672    1.000000e+00
+He  P
+    1.757659    1.000000e+00
+He  P
+    0.562969    1.000000e+00
+He  P
+    0.163462    1.000000e+00
+He  D
+    4.335818    1.000000e+00
+He  D
+    1.223691    1.000000e+00
+He  D
+    0.351198    1.000000e+00
+He  F
+    2.689017    1.000000e+00
+He  F
+    0.692924    1.000000e+00
+#BASIS SET: (7s,7p,4d,3f,2g) -> [5s,5p,4d,3f,2g] Ne
+Ne  S
+   23.302447   -3.984785e-02
+    9.703904   -1.373448e-01
+    3.472360    4.777634e-02
+Ne  S
+    1.685413    1.000000e+00
+Ne  S
+    0.694978    1.000000e+00
+Ne  S
+    0.277835    1.000000e+00
+Ne  S
+    0.088712    1.000000e+00
+Ne  P
+   19.809787    3.984840e-02
+    8.408073    1.249541e-01
+    3.332351    2.665958e-01
+Ne  P
+    1.337956    1.000000e+00
+Ne  P
+    0.522410    1.000000e+00
+Ne  P
+    0.193122    1.000000e+00
+Ne  P
+    0.059330    1.000000e+00
+Ne  D
+    6.986301    1.000000e+00
+Ne  D
+    2.309891    1.000000e+00
+Ne  D
+    0.770122    1.000000e+00
+Ne  D
+    0.281450    1.000000e+00
+Ne  F
+    4.752027    1.000000e+00
+Ne  F
+    1.537920    1.000000e+00
+Ne  F
+    0.695293    1.000000e+00
+Ne  G
+    3.040377    1.000000e+00
+Ne  G
+    1.247543    1.000000e+00
+#BASIS SET: (5s,5p,4d,3f,2g) -> [5s,5p,4d,3f,2g] Ar
+Ar  S
+    2.463919    1.000000e+00
+Ar  S
+    0.977025    1.000000e+00
+Ar  S
+    0.395235    1.000000e+00
+Ar  S
+    0.159883    1.000000e+00
+Ar  S
+    0.056901    1.000000e+00
+Ar  P
+    4.562559    1.000000e+00
+Ar  P
+    0.976667    1.000000e+00
+Ar  P
+    0.375993    1.000000e+00
+Ar  P
+    0.135661    1.000000e+00
+Ar  P
+    0.047514    1.000000e+00
+Ar  D
+    2.124826    1.000000e+00
+Ar  D
+    0.814796    1.000000e+00
+Ar  D
+    0.318398    1.000000e+00
+Ar  D
+    0.118759    1.000000e+00
+Ar  F
+    1.459883    1.000000e+00
+Ar  F
+    0.566488    1.000000e+00
+Ar  F
+    0.306717    1.000000e+00
+Ar  G
+    1.024546    1.000000e+00
+Ar  G
+    0.466998    1.000000e+00
