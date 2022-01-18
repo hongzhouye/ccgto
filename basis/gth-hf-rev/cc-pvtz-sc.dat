@@ -1,0 +1,148 @@
+# Correlation-consistent Gaussian basis sets optimized for the
+# Goedecker-Teter-Hutter (GTH) Hartree-Fock (HF) pseudopotentials.
+#
+# For questions/requests, please contact
+#
+#   Hong-Zhou Ye <hzyechem@gmail.com>
+#
+# Papers on the design and benchmark of the basis sets:
+#
+#   [1] Ye, and Berkelbach, in preparation.
+#
+#   [2] Ye, Neufeld, and Berkelbach, in preparation.
+#
+# The GTH-HF pseudopotential is taken from
+#
+#   https://github.com/juerghutter/GTH/tree/master/HF
+#
+# which is also available from the PySCF software package under the
+# name 'gth-hf-rev'; see this PR for details
+#
+#   https://github.com/pyscf/pyscf/pull/1029
+#
+# For elements with more than one PP, the basis sets suitable
+# for the calculation using different PPs are listed.
+# For example, the 'Liq1' basis set should be used with the
+# 'gth-hf-rev-q1' (i.e., 'the large-core') pseudopotential,
+# while the 'Liq3' basis set should be used with the 'gth-hf-rev-q3'
+# (i.e., the 'small-core') pseudopotential.
+#
+# Basis sets for the following elements are currently available:
+# ('nelec_frz' is num of frozen electrons suggested in correlated
+# calculations)
+#
+#   ------------------------------------
+#    elem    config           nelec_frz
+#   ------------------------------------
+#    H       1s^1             0
+#    He      1s^2             0
+#    Liq1    2s^1             0
+#    Liq3    1s^2 2s^1        0
+#    Beq2    2s^2             0
+#    Beq4    1s^2 2s^2        0
+#    B       2s^2 2p^1        0
+#    C       2s^2 2p^2        0
+#    N       2s^2 2p^3        0
+#    O       2s^2 2p^4        0
+#    F       2s^2 2p^5        0
+#    Ne      2s^2 2p^6        0
+#    Naq1    3s^1             0
+#    Naq9    2s^2 2p^6 3s^1   TBD (0 for now)
+#    Mgq2    3s^2             0
+#    Mgq10   2s^2 2p^6 3s^2   TBD (0 for now)
+#    Al      3s^2 3p^1        0
+#    Si      3s^2 3p^2        0
+#    P       3s^2 3p^3        0
+#    S       3s^2 3p^4        0
+#    Cl      3s^2 3p^5        0
+#    Ar      3s^2 3p^6        0
+#    As      4s^2 4p^3        0
+#   ------------------------------------
+#
+#
+
+#BASIS SET: (4s,4p,1d,1f) -> [4s,3p,1d,1f] Liq3
+Li  S
+    7.298459    2.818219e-01 -4.209100e-02
+    2.139580    4.562697e-01 -9.431562e-02
+Li  S
+    0.670836    1.000000e+00
+Li  S
+    0.047832    1.000000e+00
+Li  P
+    7.853830    5.386932e-03
+    2.204330    7.604557e-03
+Li  P
+    0.513280    1.000000e+00
+Li  P
+    0.079100    1.000000e+00
+Li  D
+    0.100720    1.000000e+00
+Li  F
+    0.116820    1.000000e+00
+#BASIS SET: (5s,4p,2d,1f) -> [4s,3p,2d,1f] Beq4
+Be  S
+   12.210496    2.930677e-01 -5.118985e-02
+    4.013466    4.321683e-01 -1.105547e-01
+    1.340213    3.800606e-01 -1.590242e-01
+Be  S
+    0.181843    1.000000e+00
+Be  S
+    0.059652    1.000000e+00
+Be  P
+    9.800264    1.289873e-02
+    1.126390    1.174783e-01
+Be  P
+    0.280445    1.000000e+00
+Be  P
+    0.095949    1.000000e+00
+Be  D
+    0.361100    1.000000e+00
+Be  D
+    0.185571    1.000000e+00
+Be  F
+    0.328214    1.000000e+00
+#BASIS SET: (5s,6p,1d,1f) -> [4s,3p,1d,1f] Naq9
+Na  S
+   16.175831   -1.596179e-01  2.478893e-02
+    2.140509    4.685776e-01 -7.692374e-02
+    0.883841    4.811438e-01 -1.438734e-01
+Na  S
+    0.405123    1.000000e+00
+Na  S
+    0.041252    1.000000e+00
+Na  P
+   20.082894    7.393111e-02
+    7.614307    2.023851e-01
+    2.825055    3.715998e-01
+    1.048578    4.127684e-01
+Na  P
+    0.373799    1.000000e+00
+Na  P
+    0.068786    1.000000e+00
+Na  D
+    0.089688    1.000000e+00
+Na  F
+    0.121772    1.000000e+00
+#BASIS SET: (4s,5p,2d,1f) -> [4s,3p,2d,1f] Mgq10
+Mg  S
+   19.900552   -1.663573e-01  3.363121e-02
+    2.432226    5.827966e-01 -1.457298e-01
+Mg  S
+    0.853222    1.000000e+00
+Mg  S
+    0.071290    1.000000e+00
+Mg  P
+   23.004243    9.245412e-02
+    7.336679    2.986939e-01
+    2.345397    5.026824e-01
+Mg  P
+    0.740882    1.000000e+00
+Mg  P
+    0.109362    1.000000e+00
+Mg  D
+    0.281106    1.000000e+00
+Mg  D
+    0.106842    1.000000e+00
+Mg  F
+    0.230923    1.000000e+00
