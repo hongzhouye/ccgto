@@ -1,0 +1,107 @@
+# Correlation-consistent Gaussian basis sets optimized for the
+# correlation-consistent effective core potential (ccECP).
+#
+# For questions/requests, please contact
+#
+#   Hong-Zhou Ye <hzyechem@gmail.com>
+#
+# Papers on the design and benchmark of the basis sets:
+#
+#   [1] Ye, and Berkelbach, JCTC, 2022. DOI: 10.1021/acs.jctc.1c01099
+#
+#   [2] Ye, Neufeld, and Berkelbach, in preparation.
+#
+# The ccECP is taken from
+#
+#   https://pseudopotentiallibrary.org/
+#
+# which is also available from the PySCF software package under the
+# name 'ccecp'; see this PR for details
+#
+#   https://github.com/pyscf/pyscf/pull/559
+#
+# For elements with more than one PP, the basis sets suitable
+# for the calculation using different PPs are listed.
+# For example, the 'Liq1' basis set should be used with the
+# 'ccecp' (i.e., 'the large-core') pseudopotential,
+# while the 'Liq3' basis set should be used with the 'ccecpreg'
+# (i.e., the 'small-core') pseudopotential.
+#
+# Basis sets for the following elements are currently available:
+# ('nelec_frz' is num of frozen electrons suggested in correlated
+# calculations)
+#
+#   ------------------------------------
+#    elem    config           nelec_frz
+#   ------------------------------------
+#    H       1s^1             0
+#    He      1s^2             0
+#    Liq1    2s^1             0
+#    Liq3    1s^2 2s^1        0
+#    Beq2    2s^2             0
+#    Beq4    1s^2 2s^2        0
+#    B       2s^2 2p^1        0
+#    C       2s^2 2p^2        0
+#    N       2s^2 2p^3        0
+#    O       2s^2 2p^4        0
+#    F       2s^2 2p^5        0
+#    Ne      2s^2 2p^6        0
+#    Naq1    3s^1             0
+#    Naq9    2s^2 2p^6 3s^1   TBD (0 for now)
+#    Mgq2    3s^2             0
+#    Mgq10   2s^2 2p^6 3s^2   TBD (0 for now)
+#    Al      3s^2 3p^1        0
+#    Si      3s^2 3p^2        0
+#    P       3s^2 3p^3        0
+#    S       3s^2 3p^4        0
+#    Cl      3s^2 3p^5        0
+#    Ar      3s^2 3p^6        0
+#    As      4s^2 4p^3        0
+#   ------------------------------------
+#
+#
+
+#BASIS SET: (5s,6p,1d,1f) -> [4s,3p,1d,1f] Naq9
+Na  S
+   12.365880   -1.181092e-01  1.877188e-02
+    2.378200    3.635847e-01 -6.303972e-02
+    1.044797    5.073577e-01 -1.255147e-01
+Na  S
+    0.452828    1.000000e+00
+Na  S
+    0.041325    1.000000e+00
+Na  P
+   15.634896    6.534921e-02
+    6.511290    2.212685e-01
+    2.514985    3.810354e-01
+    0.961411    3.958793e-01
+Na  P
+    0.352588    1.000000e+00
+Na  P
+    0.067160    1.000000e+00
+Na  D
+    0.088486    1.000000e+00
+Na  F
+    0.122321    1.000000e+00
+#BASIS SET: (4s,5p,2d,1f) -> [4s,3p,2d,1f] Mgq10
+Mg  S
+   14.984982   -1.353138e-01  2.837405e-02
+    2.546325    5.532264e-01 -1.397545e-01
+Mg  S
+    0.878724    1.000000e+00
+Mg  S
+    0.071220    1.000000e+00
+Mg  P
+   15.735471    1.160941e-01
+    5.672959    3.372335e-01
+    1.962078    4.853940e-01
+Mg  P
+    0.660357    1.000000e+00
+Mg  P
+    0.108176    1.000000e+00
+Mg  D
+    0.277367    1.000000e+00
+Mg  D
+    0.107067    1.000000e+00
+Mg  F
+    0.229594    1.000000e+00
