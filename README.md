@@ -41,7 +41,7 @@ For bug report and feature request, please contact
 Background
 ----------
 
-The following is a short introduction of Gaussian basis sets in general and the their application in solid materials calculations in particular. For more details, see our [paper](#how-to-cite).
+The following is a short introduction of Gaussian basis sets in general and their application in solid materials calculations in particular. For more details, see our [paper](#how-to-cite).
 
 * Gaussian basis set: what and what for?
 
