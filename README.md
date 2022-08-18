@@ -23,7 +23,8 @@ The following are currently available.
 | ccECP  | DZ ~ QZ      | Currently not available |
 
 All basis sets are provided in the NWChem format, which is recognizable by most quantum chemistry software packages.
-An example of their use with [PySCF](https://github.com/pyscf/pyscf) can be found in [example](example).
+- An example of their use with [PySCF](https://github.com/pyscf/pyscf) can be found in [example](example).
+- For CP2K users, a [converter](example/to_cp2k_format.py) is provided in [example](example).
 
 How to cite
 -----------
