@@ -31,7 +31,20 @@ How to cite
 
 Please cite the following work in publications utilizing our basis sets:
 
-- [Correlation-Consistent Gaussian Basis Sets for Solids Made Simple](https://pubs.acs.org/doi/10.1021/acs.jctc.1c01245), H.-Z. Ye and T. C. Berkelbach, *J. Chem. Theory Comput.*, (2022). doi: [10.1021/acs.jctc.1c01245](https://doi.org/10.1021/acs.jctc.1c01245)
+- [Correlation-Consistent Gaussian Basis Sets for Solids Made Simple](https://pubs.acs.org/doi/10.1021/acs.jctc.1c01245), H.-Z. Ye and T. C. Berkelbach, *J. Chem. Theory Comput.*, **18**, 1595--1606 (2022). doi: [10.1021/acs.jctc.1c01245](https://doi.org/10.1021/acs.jctc.1c01245)
+
+```tex
+@article{Ye22JCTC,
+  author = {Ye, Hong-Zhou and Berkelbach, Timothy C.},
+  title = {Correlation-Consistent Gaussian Basis Sets for Solids Made Simple},
+  journal = {J. Chem. Theory Comput.},
+  volume = {18},
+  number = {3},
+  pages = {1595--1606},
+  year = {2022},
+  doi = {10.1021/acs.jctc.1c01245},
+}
+```
 
 Contact
 -------
