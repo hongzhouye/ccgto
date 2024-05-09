@@ -77,17 +77,17 @@ if __name__ == '__main__':
         if len(elements) == 0:
             elements = None
     except:
-        print('Usage: input_nwchemfile, output_cp2kfile, basisname[, element1, element2, ...]')
+        print('Usage: input_nwchemfile, output_cp2kfile [, element1, element2, ...]')
         print()
         print('Parse basis sets for specified elements from `input_nwchemfile`, format them into the CP2K format, and dump into `output_cp2kfile`.')
         print('NOTE: `output_cp2kfile` must end with \'.dat\'.')
         print()
         print('Example 1:')
-        print('> python to_cp2k_format.py ../basis/gth-hf-rev/cc-pvdz-lc.dat cc-pvdz-lc.dat cc-pvdz-lc')
+        print('> python to_cp2k_format.py ../basis/gth-hf-rev/cc-pvdz-lc.dat cc-pvdz-lc.dat')
         print('# Leave `elements` blank --> parse ALL elements in the basis file')
         print()
         print('Example 2:')
-        print('> python to_cp2k_format.py ../basis/gth-hf-rev/cc-pvdz-lc.dat cc-pvdz-lc.dat cc-pvdz-lc C N O Al Mg')
+        print('> python to_cp2k_format.py ../basis/gth-hf-rev/cc-pvdz-lc.dat cc-pvdz-lc.dat C N O Al Mg')
         print('# Parse specified elements from the basis file only')
         sys.exit(1)
 
