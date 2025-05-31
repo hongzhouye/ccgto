@@ -1,0 +1,27 @@
+Auxiliary basis sets are optimized by minimizing the atomic HF energies/JK
+matrices as well as the MP2 correlation energy. The following cost function
+integrates all of the targets above:
+
+	Cost = fac * (vj_err + vk_err) + ej_err + ek_err + ecorr_mp2_err
+
+where
+- vj_err and vk_err are the maximum absolute error of the HF J and K matrices
+- ej_err and ek_err are the absolute error of the Coulomb and exchange
+energies
+- ecorr_mp2_err is the absolute error of the MP2 correlation energy
+- fac is a tunable parameter accounting for the fact that J/K matrices can
+tolerate larger errors than energies.
+
+Three tiers are defined:
+- Normal:    Cost < 1e-5, fac = 5
+- Tight:     Cost < 1e-5, fac = 3
+- VeryTight: Cost < 5e-6, fac = 3
+
+The optimization proceeds by trimming the AutoAux fitting basis (which is
+often much more accurate than the ETB) until the desired cost threshold
+is reached.
+
+"Normal" should be sufficient in most calculations.
+
+Note: limited support for small-core basis sets at this point, which will be
+fixed soon.
